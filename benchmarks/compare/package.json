@@ -1,0 +1,35 @@
+{
+  "name": "adaptive-promise-pool-bench",
+  "private": true,
+  "type": "module",
+  "description": "Comparison benchmark harness (not published).",
+  "scripts": {
+    "bench": "tsx run.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.22.4",
+    "p-limit": "^7.3.0",
+    "p-map": "^7.0.4",
+    "p-queue": "^9.3.0",
+    "p-retry": "^8.0.0",
+    "p-throttle": "^8.1.0",
+    "limiter": "^3.0.0",
+    "bottleneck": "^2.19.5",
+    "@supercharge/promise-pool": "^3.3.0",
+    "cockatiel": "^4.0.0",
+    "aimd-bucket": "^0.2.1",
+    "promise-pool-smart": "^0.1.6",
+    "atrion": "^2.0.0",
+    "adaptive-concurrency": "^0.12.1",
+    "@adaptive-concurrency-toolkit/core": "^1.0.1",
+    "congestion-control": "^1.5.1",
+    "ky": "^2.0.2",
+    "got": "^15.0.6",
+    "axios": "^1.18.1",
+    "axios-retry": "^4.5.0",
+    "axios-retry-after": "^2.1.0",
+    "fetch-rate-limit-util": "^4.6.2",
+    "@geoapify/request-rate-limiter": "^1.1.0",
+    "fetch-retry": "^6.0.0"
+  }
+}

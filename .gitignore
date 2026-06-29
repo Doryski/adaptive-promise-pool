@@ -1,0 +1,12 @@
+node_modules
+dist
+coverage
+*.log
+.DS_Store
+.idea
+.vscode
+*.tgz
+
+# Generated benchmark outputs
+benchmarks/ramp-data.json
+benchmarks/results.html

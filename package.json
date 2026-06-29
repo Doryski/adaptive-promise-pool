@@ -1,0 +1,67 @@
+{
+  "name": "adaptive-promise-pool",
+  "version": "0.1.0",
+  "description": "Map-like concurrent promise processing with self-tuning (AIMD) concurrency, 429/Retry-After awareness, and built-in retry.",
+  "author": "Dominik Rycharski (https://github.com/doryski)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doryski/adaptive-promise-pool.git"
+  },
+  "bugs": {
+    "url": "https://github.com/doryski/adaptive-promise-pool/issues"
+  },
+  "homepage": "https://github.com/doryski/adaptive-promise-pool#readme",
+  "keywords": [
+    "promise",
+    "pool",
+    "concurrency",
+    "adaptive",
+    "aimd",
+    "rate-limit",
+    "429",
+    "retry",
+    "backpressure",
+    "congestion-control"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "bench": "tsx benchmarks/adaptive-vs-static.ts",
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "test": "vitest run --maxWorkers=1 --bail=5",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "pnpm build",
+    "release": "tsx scripts/release.ts"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.0.1",
+    "commander": "^14.0.3",
+    "eslint": "^10.5.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0",
+    "vitest": "^4.1.9"
+  }
+}
