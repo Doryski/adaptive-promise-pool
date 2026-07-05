@@ -25,7 +25,6 @@
   ],
   "type": "module",
   "license": "MIT",
-  "packageManager": "pnpm@9.0.0",
   "engines": {
     "node": ">=20"
   },
@@ -47,13 +46,14 @@
     "bench": "tsx benchmarks/adaptive-vs-static.ts",
     "build": "tsup src/index.ts --format esm,cjs --dts --clean",
     "test": "vitest run --maxWorkers=1 --bail=5",
-    "typecheck": "tsc --noEmit",
+    "type-check": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepublishOnly": "pnpm build",
-    "release": "tsx scripts/release.ts"
+    "release": "doryski-release"
   },
   "devDependencies": {
+    "@doryski/release": "^1.0.0",
     "@eslint/js": "^10.0.1",
     "@types/node": "^26.0.1",
     "commander": "^14.0.3",

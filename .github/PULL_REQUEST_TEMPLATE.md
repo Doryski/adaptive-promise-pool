@@ -16,7 +16,7 @@ Closes #
 
 ## Checklist
 
-- [ ] `pnpm typecheck` passes
+- [ ] `pnpm type-check` passes
 - [ ] `pnpm lint` passes
 - [ ] `pnpm test` passes
 - [ ] `pnpm build` succeeds

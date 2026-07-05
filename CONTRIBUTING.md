@@ -33,7 +33,7 @@ pnpm install
 Before opening a pull request, make sure all of these pass:
 
 ```bash
-pnpm typecheck   # tsc --noEmit
+pnpm type-check   # tsc --noEmit
 pnpm lint        # eslint .
 pnpm test        # vitest run --maxWorkers=1 --bail=5
 pnpm build       # tsup dual ESM + CJS build
@@ -62,7 +62,7 @@ failures. Tests remain isolated with no shared state.
 
 1. Fork the repository and create a feature branch.
 2. Make your change, keeping it focused and small.
-3. Ensure `pnpm typecheck`, `pnpm lint`, `pnpm test`, and `pnpm build` all pass.
+3. Ensure `pnpm type-check`, `pnpm lint`, `pnpm test`, and `pnpm build` all pass.
 4. Add or update tests covering your change.
 5. Open a pull request describing the motivation and the approach. Reference any related
    issue.
