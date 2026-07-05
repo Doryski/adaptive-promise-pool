@@ -5,12 +5,12 @@
   "author": "Dominik Rycharski (https://github.com/doryski)",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doryski/adaptive-promise-pool.git"
+    "url": "git+https://github.com/Doryski/adaptive-promise-pool.git"
   },
   "bugs": {
-    "url": "https://github.com/doryski/adaptive-promise-pool/issues"
+    "url": "https://github.com/Doryski/adaptive-promise-pool/issues"
   },
-  "homepage": "https://github.com/doryski/adaptive-promise-pool#readme",
+  "homepage": "https://github.com/Doryski/adaptive-promise-pool#readme",
   "keywords": [
     "promise",
     "pool",
