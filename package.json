@@ -1,6 +1,6 @@
 {
   "name": "adaptive-promise-pool",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Map-like concurrent promise processing with self-tuning (AIMD) concurrency, 429/Retry-After awareness, and built-in retry.",
   "author": "Dominik Rycharski (https://github.com/doryski)",
   "repository": {
